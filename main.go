@@ -92,8 +92,6 @@ func isExists(file string) bool {
 
 // Get Status Func
 func status(url string, timeout time.Duration) {
-	// Add sSa
-	url = "https://" + url
 	// Editing http transport
 	trans := &http.Transport{
 		MaxIdleConns:      30,
